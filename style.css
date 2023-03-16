@@ -1,0 +1,429 @@
+body{
+    margin: 0;
+    background-color: rgb(214,204,194);
+    overflow-x: hidden;
+}
+#profilesection{
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+#skills{
+    background-color: rgb(213,189,175);
+    width: 100%;
+    height: 850px;
+    position: relative;
+
+}
+#aboutme{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin-top: 17%;
+
+
+
+}
+.menu{
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+
+    background-color: rgb(213,189,175);
+
+}
+.buttons{
+    position: relative;
+    left: 37%;
+    top: 19px;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+}
+
+.abtme , .exp , .hmpg , .message{
+    border-color: transparent;
+    border-radius: 25px;
+    width: 110px;
+    height: 35px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+.hmpg span{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s;
+    position: relative;
+    display: inline-block;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.message span{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s;
+    position: relative;
+    display: inline-block;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.abtme span{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s;
+    position: relative;
+    display: inline-block;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.exp span{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s;
+    position: relative;
+    display: inline-block;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.exp{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s;
+    position: relative;
+    display: inline-block;
+}
+.abtme:hover{
+    background-color: rgb(214,204,194);
+    box-shadow: 0 2px 0px 0 rgba(0,0,0,0.2)
+}
+.abtme span:after {
+    right: -4px;
+    transition: 0.5s;
+}
+.abtme:hover span {
+    padding-right: 5px;
+}
+.exp:hover{
+    background-color: rgb(214,204,194);
+    box-shadow: 0 2px 0px 0 rgba(0,0,0,0.2)
+}
+.hmpg:hover{
+    background-color: rgb(214,204,194);
+    box-shadow: 0 2px 0px 0 rgba(0,0,0,0.2)
+}
+.hmpg span:after {
+    right: -4px;
+    transition: 0.5s;
+}
+.hmpg:hover span {
+    padding-right: 5px;
+}
+.message:hover{
+    background-color: rgb(214,204,194);
+    box-shadow: 0 2px 0px 0 rgba(0,0,0,0.2)
+}
+.message span:after {
+    right: -4px;
+    transition: 0.5s;
+}
+.message:hover span {
+    padding-right: 5px;
+}
+.exp span:after {
+    right: -2px;
+    transition: 0.2s;
+}
+.exp:hover span {
+    padding-right: 5px;
+}
+.profilepic img{
+    width: 400px;
+    height: 500px;
+    position: relative;
+    border-radius: 25px 25px 25px 25px;
+    transform: translateX(10%);
+}
+#profile{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    position: absolute;
+    left: 47%;
+    top: 13%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px 250px 120px 100px;
+}
+.description {
+    width: 350px;
+    height: 450px;
+    position: absolute;
+    top: 10%;
+    transform: translateX(-90%);
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+    text-align: right;
+    font-size: 20px;
+}
+.name{
+    font-size: 90px;
+    font-weight: bold;
+    margin: 0;
+    text-align: right;
+}
+.lorem{
+    position: relative;
+    bottom: 5%;
+}
+.basics{
+    writing-mode: vertical-rl;
+    height: 60px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    position: relative;
+    bottom: 7%;
+    color: violet;
+}
+.beginner{
+    width: 350px;
+    height: 100px;
+}
+.fa-brands{
+    font-size:45px;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+}
+.socialicons{
+    justify-content: right;
+    display: flex;
+    flex-direction: row;
+    transition: 0.3s ease-out;
+    bottom: 7%;
+    position: relative;
+}
+.instagram img{
+
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    position: flex;
+    transform: translateY(-13%);
+}
+.github{
+    transition: 0.3s ease-out;
+}
+.instagram{
+    transition: 0.3s ease-out;
+}
+.github img{
+    height: 80px;
+    width: 90px;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+.github:hover{
+    transform: translateY(-5px);
+}
+.instagram:hover{
+    transform: translateY(-5px);
+}
+.fa-brands:hover{
+    transform: translateY(-5px);
+}
+
+.skillpursue{
+    text-align: center;
+    font-size: 35px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    top: 15%;
+    position: relative;
+}
+.skillpursue span{
+
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: white;
+}
+.learningsteps{
+    width: 70%;
+    height: 350px;
+    position: relative;
+    display: flex;
+    background-color: white;
+    border-radius: 700px 45px 700px 45px;
+    transform: translateX(22%);
+    top: 5%;
+
+
+}
+.html{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin-right: 25px;
+    margin-left: 10px;
+}
+.css{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.javascript{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.fa-html5{
+    background-color: transparent;
+    font-size: 250px;
+}
+.fa-css3-alt{
+    background-color: transparent;
+    font-size: 250px;
+}
+.fa-square-js{
+    background-color: transparent;
+    font-size: 250px;
+}
+.learningsteps{
+    text-align: center;
+    margin-top: 10%;
+}
+.stepsdsc{
+    font-weight: bold;
+    font-size: 45px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    position: relative;
+    bottom: 7%;
+}
+.bythetime{
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 35px;
+    position: relative;
+    top: 5%;
+}
+.abtmeheading{
+    width: 500px;
+    height: 250px;
+    font-size: 35px;
+    position: relative;
+    top: -10%;
+    left: 25%;
+    background-color: white;
+    text-align: center;
+    border-radius: 25px;
+}
+.abtmeheading h1{
+    position: relative;
+    transform: translateY(125%);
+}
+.abtdsc img{
+    width: 550px;
+    height: 600px;
+    position: relative;
+    margin-right: 1px;
+    border-radius: 25px 25px 25px 25px;
+}
+.abtdsc{
+    text-align: center;
+    display: flex;
+    width: 925px;
+}
+.photodiv{
+    width: 500px;
+    height: 600px;
+    position: relative;
+    margin-top: 4%;
+    margin-left: 7%;
+    background-color: white;
+    border-radius: 400px 15px 400px 15px;
+}
+.photodiv img{
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+}
+.photodsc{
+    width: 550px;
+    height: 350px;
+    color: black;
+    position: relative;
+    font-size: 30px;
+    text-align: left;
+    left: 5%;
+    margin-top: 10%;
+    background-color: white;
+    border-radius: 25px;
+}
+.photodsc p{
+    position: relative;
+
+    text-align: center;
+}
+.htmlandcss{
+    font-weight: bold;
+}
+#messageform{
+    background-color: rgb(213,189,175);
+    width: 100%;
+    height: 600px;
+    position: relative;
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin-top: 17%;
+}
+.messageme{
+    width: 550px;
+    height: auto;
+    position: relative;
+    margin: auto;
+    transform: translateY(15%);
+    background-color: white;
+    border-radius: 10px;
+}
+form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    width: 90%;
+}
+form h1{
+    font-size: 45px;
+}
+form input, form textarea{
+    border: 0;
+    margin: 5px 0;
+    padding: 10px;
+    outline: none;
+    background: rgb(213,189,175);
+    border-radius: 5px;
+    font-size: 16px;
+}
+form button{
+    border: 0;
+    outline: none;
+    background: #ff5361;
+    margin: 5px 0;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+.@media screen and (max-width: 420px){

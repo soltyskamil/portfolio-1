@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Portfolio#1</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        </head>
+        <body>
+        <!--menu-->
+            <header>
+                <div class="menu">
+                    <nav class="buttons"><a href=""></a>
+                       <a href="#aboutme"><button class="abtme"><span>ABOUT ME</span></a></button><a href="#profilesection"><button class="exp"><span>HOME</span></a></button><a href="#skills"><button class="hmpg"><span>SKILLS</span></a></button><a href="#messageform"><button class="message"><span>MESSAGE</span></button></a>
+                    </nav>
+                </div>
+            </header>
+        <!---profilesection-->
+            <div id="profilesection">
+                <div id="profile">
+                            <div class="profilepic">
+                                <img src="images/photo.png" alt="profile picture">
+                            </div>
+                            <div class="description">
+                                <div class="Hello">
+                                    <p class="name">Hello!</p>
+                                </div>
+                                    <h2 class="beginner">MY NAME IS KAMIL AND IM LEARNING THE BASICS OF</h2>
+                                    <span class="basics">HTML AND CSS</span>
+                                    <p class="lorem">DONT BE AFRAID TO CHECKOUT MY SOCIAL MEDIA ACCOUNTS..</p>
+
+                                        <div class="socialicons">
+                                            <div class="github">
+                                                <a href="https://github.com/soltyskamil"><img src="images/github.png" alt="githubaccount"></a>
+                                            </div>
+                                            <div class="instagram">
+                                                <a href="https://www.instagram.com/kamillsoltys/"><img src="images/instagramlogo.png" alt="instagramaccount"></a>
+                                            </div>
+                                        </div>
+                            </div>
+                </div>
+            </div>
+        <!--what im going to learn-->
+                <div id="skills">
+                            <div class="skillpursue">
+                                    <h1>SKILLS IM GOING TO <span><em>LEARN</em></span></h1>
+                            </div>
+                            <div class="learningsteps">
+                                <div class="html">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <p class="stepsdsc">HTML</p>
+                                </div>
+
+                                <div class="css">
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <p class="stepsdsc">CSS</p>
+                                </div>
+
+                                <div class="javascript">
+                                    <i class="fa-brands fa-square-js"></i>
+                                    <p class="stepsdsc">JAVASCRIPT</p>
+                                </div>
+                            </div>
+                            <div class="bythetime">
+                                <h2>AND BY THE TIME MANY MORE..</h2>
+                            </div>
+                </div>
+        <!--about me-->
+                <div id="aboutme">
+                    <div class="abtmeheading">
+                        <h1>ABOUT ME</h1>
+                    </div>
+                    <div class="abtdsc">
+                        <div class="photodiv">
+                            <img src="images/photo.png" alt="my sec photo">
+                        </div>
+                        <div class="photodsc">
+                            <p>MY NAME IS KAMIL AND I AM CURRENTLY STUDYING THE BASICS OF <span class="htmlandcss">HTML AND CSS.</span> I HOPE YOU ENJOY MY WORK.<br> ADDITIONALLY, I AM A STUDENT OF COMPUTER SCIENCE AT THE HIGHER SCHOOL OF BUSINESS IN NOWY SACZ.</p>
+                        </div>
+                    </div>
+                </div>
+        <!--message-->
+                    <div id="messageform">
+                        <div class="messageme">
+                            <form onsubmit="sendEmail(); reset(); return false; " >
+                                <h1>MESSEGE ME</h1>
+                                <input type="YOUR NAME" id="name" placeholder="YOUR NAME">
+                                <input type="YOUR PHONE" id="phone" placeholder="YOUR PHONE">
+                                <input type="YOUR EMAIL ADRESS" id="email" placeholder="EMAIL ADRESS">
+                                <textarea style="resize: none" name="" id="message" rows="3" placeholder="MESSAGE"></textarea>
+                                <button type="submit">SEND</button>
+                            </form>
+                        </div>
+                    </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "testingemailss73@gmail.com",
+                    Password : "CDB28D2EC7B13D648FC7B84C9837B8046813",
+                    To : 'kamils3542@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "New contact form",
+                    Body : "And this is the body"
+                }).then(
+                    message => alert(message)
+                );
+            }
+        </script>
+        </body>
+</html>
